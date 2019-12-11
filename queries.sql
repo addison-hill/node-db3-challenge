@@ -23,7 +23,7 @@ SELECT p.ProductName
     ,p.QuantityPerUnit as Quantity
 FROM OrderDetail as od
 JOIN Product as p
-ON od.ProductId = p.Id
+    ON od.ProductId = p.Id
 WHERE od.OrderId = 10251
 ORDER BY ProductName;
 
@@ -34,6 +34,6 @@ SELECT o.Id as OrderID
     , e.LastName
 FROM [Order] as o
 JOIN Customer as c
-ON o.CustomerId = c.Id
+    ON o.CustomerId = c.Id
 JOIN Employee as e
-ON o.EmployeeId = e.Id;
+    ON o.EmployeeId = e.Id;
